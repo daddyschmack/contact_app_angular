@@ -1,0 +1,73 @@
+<div class="contact_list" ng-class="{'fade-out':toggle}">
+    <div class="add">
+        <a href="" ng-click="addContact()">+ Add a New Contact</a>
+    </div>
+    <ul class="list">
+        <li class="title_row">
+            <div class="contact_field handle">&nbsp</div>
+            <div class="contact_field type">Type</div>
+            <div class="contact_field name">Name</div>
+            <div class="contact_field title">Title</div>
+            <div class="contact_field phone">Phone</div>
+            <div class="contact_field ext">Ext.</div>
+            <div class="contact_field fax">Fax</div>
+            <div class="contact_field email">Email</div>
+            <div class="contact_field controls">&nbsp;</div>
+        </li>
+        <li class="item" ng-class="{'editing-item': editing, 'edited': contact.edited}"
+            ng-repeat="contact in contacts" ng-init="contact.selected = false">
+            <div class="contact_field handle">
+                <input ng-model="contact.selected" type="checkbox"/>
+                <span ng-click="contact.selected = !contact.selected"></span>
+            </div>
+            <div class="contact_field type"><label ng-click="editing = true"  ng-hide="editing">
+                {{contact.type}}</label><input ng-change="contact.edited = true"
+                                               ng-show="editing"
+                                               tabindex="0"
+                                               ng-model="contact.type" class="editing-label" type="text" placeholder="position"/>
+            </div>
+            <div class="contact_field name"><label ng-click="editing = true" ng-hide="editing" >
+                {{contact.name}}</label><input ng-change="contact.edited = true"
+                                               ng-show="editing"
+                                               ng-model="contact.name" class="editing-label" type="text"/>
+            </div>
+            <div class="contact_field title"><label ng-click="editing = true" ng-hide="editing" >
+                {{contact.title}}</label><input ng-change="contact.edited = true"
+                                                ng-show="editing"
+                                                ng-model="contact.title" class="editing-label" type="text"/>
+            </div>
+            <div class="contact_field phone"><label ng-click="editing = true" ng-hide="editing" >
+                {{contact.phone}}</label><input ng-change="contact.edited = true"
+                                                ng-show="editing"
+                                                ng-model="contact.phone" class="editing-label" type="text"/>
+            </div>
+            <div class="contact_field ext"><label ng-click="editing = true" ng-hide="editing" >
+                {{contact.ext}}</label><input ng-change="contact.edited = true"
+                                              ng-show="editing"
+                                              ng-model="contact.ext" class="editing-label" type="text"/>
+            </div>
+            <div class="contact_field fax"><label ng-click="editing = true" ng-hide="editing" >
+                {{contact.fax}}</label><input ng-change="contact.edited = true"
+                                              ng-show="editing"
+                                              ng-model="contact.fax" class="editing-label" type="text"/>
+            </div>
+            <div class="contact_field email"><label ng-click="editing = true" ng-hide="editing"  >
+                {{contact.email}}</label><input ng-change="contact.edited = true"
+                                                ng-show="editing"
+                                                ng-model="contact.email" class="editing-label" type="text"
+                                                ng-blur="editing = false;"    />
+                </div>
+
+            <div class="contact_field actions">
+                <a href="" ng-click="toggleEdit()">Edit</a>
+                <a href="" ng-click="saveContacts(contact)">Save</a>
+                <a href="" ng-click="deleteContact(contact, $index)" class="Delete">delete</a>
+            </div>
+        </li>
+    </ul>
+    <table>
+        <thead>
+        <th></th>
+        </thead>
+    </table>
+</div>

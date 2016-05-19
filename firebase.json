@@ -1,0 +1,9 @@
+{
+  "firebase": "jj-contacts-example",
+  "public": "public",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

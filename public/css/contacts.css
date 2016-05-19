@@ -1,0 +1,166 @@
+body {
+  color: #635757;
+  font-family: "Varela Round";
+  text-align: center;
+  font-size: 14px;
+  max-width: 1280px;
+  margin: 0 auto; }
+
+header {
+  margin-left: 5%;
+  margin-top: 20px; }
+
+div.instructions {
+  margin-top: 10px;
+  text-align: left; }
+
+div.top_row {
+  font-size: 20px;
+  color: #3399ff;
+  text-align: left; }
+  div.top_row .page_title {
+    display: inline-block;
+    vertical-align: top;
+    width: 90%; }
+  div.top_row .collapse_control {
+    color: #635757;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    width: 5%; }
+    div.top_row .collapse_control.collapsed:before, div.top_row .collapse_control:before {
+      padding: 0 3px;
+      border: 1px solid darkgray;
+      color: darkgray;
+      margin-right: 10px;
+      line-height: 14px;
+      font-size: 20px;
+      border-radius: 15%; }
+    div.top_row .collapse_control.collapsed:before {
+      content: "+";
+      opacity: 1;
+      transition: all 1s ease; }
+    div.top_row .collapse_control.collapsed:after {
+      content: "Expand"; }
+    div.top_row .collapse_control:before {
+      content: "\005F";
+      opacity: 1;
+      transition: all 1s ease; }
+    div.top_row .collapse_control:after {
+      content: "Collapse"; }
+
+ul {
+  display: table;
+  list-style-type: none;
+  padding-right: 0;
+  width: 95%; }
+  ul li {
+    display: table-row; }
+    ul li.title_row > div {
+      line-height: 20px;
+      padding: 30px 10px 30px 20px;
+      color: #3399ff; }
+      ul li.title_row > div.contact_field.email {
+        text-transform: capitalize; }
+      ul li.title_row > div .handle {
+        width: 20px;
+        padding: 5px 10px; }
+      ul li.title_row > div .type {
+        width: 100px; }
+      ul li.title_row > div .name {
+        width: 250px; }
+      ul li.title_row > div .title {
+        width: 200px; }
+      ul li.title_row > div .phone, ul li.title_row > div .fax {
+        width: 350px; }
+      ul li.title_row > div .ext {
+        width: 20px; }
+    ul li .contact_field {
+      display: table-cell;
+      border: 1px solid gray;
+      text-align: left;
+      padding: 10px 10px 10px 20px;
+      font-size: 14px;
+      text-transform: capitalize; }
+      ul li .contact_field.email {
+        text-transform: lowercase; }
+
+a {
+  color: #3f8abf;
+  text-decoration: none; }
+
+a:hover {
+  color: #65a1cc; }
+
+ul {
+  border: 1px solid gray; }
+
+.list {
+  background: #fff;
+  width: 90%;
+  min-width: 500px;
+  margin: 80px auto 0;
+  text-align: left;
+  padding: 0; }
+  .list .item {
+    border-bottom: 1px solid #edeff0;
+    padding: 17px 0 18px 17px; }
+    .list .item label {
+      padding-left: 5px;
+      cursor: pointer; }
+    .list .item .editing-label {
+      margin-left: 5px;
+      font-family: "Varela Round";
+      border-radius: 2px;
+      border: 2px solid #a7b9c4;
+      font-size: 13px;
+      width: 100px; }
+    .list .item .actions {
+      margin-right: 20px; }
+      .list .item .actions .delete {
+        color: #ed5a5a;
+        margin-left: 10px; }
+        .list .item .actions .delete:hover {
+          color: #f28888;
+          font-weight: bold; }
+    .list .item.editing-item .actions {
+      margin-top: 17px; }
+    .list .item .edited label:after {
+      content: " edited";
+      text-transform: uppercase;
+      color: #a7b9c4;
+      font-size: 14px;
+      padding-left: 5px; }
+    .list .item:nth-child(even) {
+      background: #EEEEEE; }
+  .list .completed label {
+    color: #a7b9c4;
+    text-decoration: line-through; }
+  .list .add {
+    padding: 25px 0 27px 25px; }
+
+input[type="checkbox"] {
+  display: none; }
+  input[type="checkbox"] + span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url(../../public/images/checkbox-empty.svg) left top no-repeat;
+    cursor: pointer; }
+  input[type="checkbox"]:checked + span {
+    background: url(../../public/images/checkbox-filled.svg) left top no-repeat; }
+
+.contact_list {
+  opacity: 1;
+  transition: all 1s ease; }
+
+.fade-out {
+  opacity: 0;
+  transition: all 1s ease; }
+
+
+
+/*# sourceMappingURL=contacts.css.map */

@@ -1,0 +1,217 @@
+//@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+$title_color: #3399ff;
+$primary_font:  #635757;
+body {
+  color: $primary_font;
+  font-family: "Varela Round";
+  text-align: center;
+  font-size: 14px;
+  max-width: 1280px;
+  margin:0 auto;
+}
+header{
+  margin-left:5%;
+  margin-top: 20px;
+}
+div.instructions{
+  margin-top:10px;
+  text-align: left;
+}
+ div.top_row {
+
+  font-size:20px;
+  color: $title_color;
+  text-align: left;
+   & .page_title{
+      display: inline-block;
+     vertical-align: top;
+     width:90%;
+   }
+   & .collapse_control{
+     color: $primary_font;
+     font-size: 14px;
+     font-weight:bold;
+     display: inline-block;
+     vertical-align: top;
+     width: 5%;
+     &.collapsed:before, &:before{
+       padding: 0 3px;
+       border: 1px solid darkgray;
+       color:darkgray;
+       margin-right: 10px;
+       line-height: 14px;
+       font-size:20px;
+       border-radius: 15%;
+     }
+     &.collapsed:before{
+      //font-family: FontAwesome;
+      //content: "\f068";
+       //content: "_";
+       content: "+";
+       opacity: 1;
+       transition: all 1s ease;
+
+     }
+     &.collapsed:after{
+       content:"Expand";
+     }
+     &:before{
+      //font-family: FontAwesome;
+     // content: "\f067";
+       content: "\005F";
+       opacity: 1;
+       transition: all 1s ease;
+     }
+     &:after{
+       content:"Collapse";
+     }
+
+ }
+}
+ul{
+  display: table;
+  list-style-type: none;
+  padding-right:0;
+  width:95%;
+  & li{
+    display: table-row;
+    &.title_row > div{
+      line-height:20px;
+      padding: 30px 10px 30px 20px;
+      color: $title_color;
+      &.contact_field.email{
+        text-transform: capitalize;
+      }
+
+    & .handle{
+      width:20px;
+      padding: 5px 10px;
+    }
+    & .type{
+      width: 100px;
+    }
+    & .name{
+      width:250px;
+    }
+    & .title{
+      width: 200px;
+    }
+    & .phone,.fax{
+      width: 350px;
+    }
+    & .ext{
+      width:20px;
+    }
+
+  }
+  & .contact_field{
+    display: table-cell;
+    //width:10%;
+    border:1px solid gray;
+    text-align: left;
+    padding: 10px 10px 10px 20px;
+    font-size: 14px;
+    text-transform: capitalize;
+    &.email{
+      text-transform: lowercase;
+    }
+  }
+  }
+}
+
+
+a {
+  color: #3f8abf;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #65a1cc;
+}
+ul{
+  border:1px solid gray;
+}
+.list {
+  background: #fff;
+  width: 90%;
+  min-width: 500px;
+  margin: 80px auto 0;
+  text-align: left;
+  padding:0;
+  & .item {
+    border-bottom: 1px solid #edeff0;
+    padding: 17px 0 18px 17px;
+    & label {
+      padding-left: 5px;
+      cursor: pointer;
+    }
+    & .editing-label {
+      margin-left: 5px;
+      font-family: "Varela Round";
+      border-radius: 2px;
+      border: 2px solid #a7b9c4;
+      font-size: 13px;
+      //padding: 15px 0 15px 10px;
+      width: 100px;
+    }
+    & .actions {
+      margin-right: 20px;
+      & .delete {
+        color: #ed5a5a;
+        margin-left: 10px;
+        &:hover {
+          color: #f28888;
+          font-weight: bold;
+        }
+      }
+    }
+    &.editing-item .actions {
+      margin-top: 17px;
+    }
+    & .edited label{
+      &:after {
+        content: " edited";
+        text-transform: uppercase;
+        color: #a7b9c4;
+        font-size: 14px;
+        padding-left: 5px;
+      }
+    }
+    &:nth-child(even){
+      background: #EEEEEE;
+    }
+
+  }
+  & .completed label {
+    color: #a7b9c4;
+    text-decoration: line-through;
+  }
+  & .add {
+    padding: 25px 0 27px 25px;
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+  & + span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url(../../public/images/checkbox-empty.svg) left top no-repeat;
+    cursor: pointer;
+  }
+  &:checked + span {
+    background: url(../../public/images/checkbox-filled.svg) left top no-repeat;
+  }
+}
+
+.contact_list{
+  opacity:1;
+  transition: all 1s ease;
+}
+.fade-out{
+  opacity: 0;
+  transition: all 1s ease;
+}

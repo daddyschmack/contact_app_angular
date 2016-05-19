@@ -1,0 +1,16 @@
+{
+  "name": "contact_app_angular",
+  "version": "1.0.0",
+  "description": "a test for inmar",
+  "main": "app.js",
+  "author": "john jaeckle",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.5"
+  }
+}

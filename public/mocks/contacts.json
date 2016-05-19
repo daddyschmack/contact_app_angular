@@ -1,0 +1,42 @@
+[
+  {"type":"executive",
+    "name": "Ann Brown",
+    "title":"CEO",
+    "phone": "512 465-5555",
+    "ext.": "",
+    "fax":"512 465-5555",
+    "email":"ann.brown@inmar.com"
+  },
+  {"type":"Inmar AT",
+    "name": "Mary Smith",
+    "title":"Lorem Ipsum",
+    "phone": "512 465-5555",
+    "ext.": "",
+    "fax":"512 465-5555",
+    "email":"mary_smith@inmar.com"
+  },
+  {"type":"Executive",
+    "name": "John Doe",
+    "title":"Dolor Sit",
+    "phone": "512 465-5555",
+    "ext.": "",
+    "fax":"512 465-5555",
+    "email":"john_doe@inmar.com"
+  },
+  {"type":"Daily",
+    "name": "John Doe",
+    "title":"Dolor sit amet",
+    "phone": "512 465-5555",
+    "ext.": "",
+    "fax":"512 465-5555",
+    "email":"john_doe2@inmar.com"
+  },
+  {"type":"Other",
+    "name": "John Doe",
+    "title":"Lorem Ipsum",
+    "phone": "512 465-5555",
+    "ext.": "",
+    "fax":"512 465-5555",
+    "email":"john_doe3@inmar.com"
+  }
+]
