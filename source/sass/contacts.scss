@@ -215,3 +215,105 @@ input[type="checkbox"] {
   opacity: 0;
   transition: all 1s ease;
 }
+
+
+.card_view{
+  font-size: 62.5%; /* Sets up the Base 10 stuff  so we can use rems*/
+  display: flex;
+  flex-direction: row;
+  & .add {
+    text-align: center;
+    height: 1rem;
+    float: right;
+    width: 300px;
+    position: absolute;
+    margin-left: 3.75rem;
+    margin-top: 2rem;
+    width: 65.75%;
+    font-size: 1rem;
+  }
+  & .list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  & .title_row{
+    display:none;
+  }
+  li.item{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 20rem;
+   // width:60rem;
+    border: 1px solid gray;
+    border-radius: 2%;
+    margin: 1rem;
+    justify-content: flex-start;
+  }
+   & .contact_field{
+     border: none;
+     display: flex;
+     flex-direction: row;
+     &:before{
+       margin-right: .5rem;
+     }
+   }
+  & .handle{
+    order:8;
+    display: block;
+    flex-basis: 20%;
+  }
+    & .type{
+      order: 3;
+      &:before{
+        content: "Contact Type: "
+      }
+    }
+
+  & .name{
+    order: 2;
+    flex-basis: 100%;
+    &:before{
+      content: "Name: ";
+    }
+  }
+  & .title{
+    order: 1;
+    &:before{
+      content: "Title: ";
+    }
+  }
+  & .phone{
+    order: 4;
+    &:before{
+      content: "Phone: ";
+    }
+  }
+  & .fax{
+    order: 6;
+     &:before{
+      content: "Fascimile: ";
+    }
+  }
+  & .ext{
+    order: 5;
+    &:before{
+      content: "Ext: ";
+    }
+  }
+  & .email{
+    order: 7;
+    &:before{
+      content: "Email: "
+    }
+  }
+  & .actions{
+    order: 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    & a{
+      margin: .2rem;
+    }
+  }
+}

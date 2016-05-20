@@ -161,6 +161,130 @@ input[type="checkbox"] {
   opacity: 0;
   transition: all 1s ease; }
 
+.card_view {
+  font-size: 62.5%;
+  /* Sets up the Base 10 stuff  so we can use rems*/
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  .card_view .add {
+    text-align: center;
+    height: 1rem;
+    float: right;
+    width: 300px;
+    position: absolute;
+    margin-left: 3.75rem;
+    margin-top: 2rem;
+    width: 65.75%;
+    font-size: 1rem; }
+  .card_view .list {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .card_view .title_row {
+    display: none; }
+  .card_view li.item {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    max-width: 20rem;
+    border: 1px solid gray;
+    border-radius: 2%;
+    margin: 1rem;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .card_view .contact_field {
+    border: none;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .card_view .contact_field:before {
+      margin-right: .5rem; }
+  .card_view .handle {
+    -webkit-order: 8;
+    -ms-flex-order: 8;
+    order: 8;
+    display: block;
+    -webkit-flex-basis: 20%;
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%; }
+  .card_view .type {
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3; }
+    .card_view .type:before {
+      content: "Contact Type: "; }
+  .card_view .name {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+    .card_view .name:before {
+      content: "Name: "; }
+  .card_view .title {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1; }
+    .card_view .title:before {
+      content: "Title: "; }
+  .card_view .phone {
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4; }
+    .card_view .phone:before {
+      content: "Phone: "; }
+  .card_view .fax {
+    -webkit-order: 6;
+    -ms-flex-order: 6;
+    order: 6; }
+    .card_view .fax:before {
+      content: "Fascimile: "; }
+  .card_view .ext {
+    -webkit-order: 5;
+    -ms-flex-order: 5;
+    order: 5; }
+    .card_view .ext:before {
+      content: "Ext: "; }
+  .card_view .email {
+    -webkit-order: 7;
+    -ms-flex-order: 7;
+    order: 7; }
+    .card_view .email:before {
+      content: "Email: "; }
+  .card_view .actions {
+    -webkit-order: 9;
+    -ms-flex-order: 9;
+    order: 9;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .card_view .actions a {
+      margin: .2rem; }
+
 
 
 /*# sourceMappingURL=contacts.css.map */

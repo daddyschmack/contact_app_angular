@@ -8,6 +8,13 @@
 </head>
 <body ng-app="contactListApp">
 <header>
+    <div class="choose">
+        <select id="interface_chooser" ng-model="interface">
+            <option value="">---Please select the way to see the contact list---</option> <!-- not selected / blank option -->
+            <option value="contact_list"> List View</option> <!-- interpolation -->
+            <option value="card_view">Card View</option>
+        </select>
+    </div>
 <div class="top_row">
     <div class="page_title">External Contacts</div>
     <div class="collapse_control" ng-click="toggle = !toggle" ng-class="{'collapsed':toggle}"></div>
